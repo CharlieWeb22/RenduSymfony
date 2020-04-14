@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    <div class="jumbotron mt-5">
+        <h1 class="display-4">Ceci est la page d'accueil !</h1>
+        <p class="lead">Vos identifiants administrateurs sont les suivants : <br> <em>Catherinedelapereix@gmail.com</em> <br> Votre mot de passe : <br> <em>Catherine</em></p>
+        <hr class="my-4">
+        <p class="text-uppercase">En créant un compte vous deviendrais automatiquement utilisateurs</p>
+        <a class="btn btn-primary btn-lg float-right" href="{{ path('app_register') }}" role="button">S'inscrire</a>
+      </div>
+</div>
+
+<!--
+<a href="{{ path('article_index') }}">Nos actualités</a>
+<a href="{{ path('app_register') }}">S'inscrire</a>
+<a href="{{ path('app_login') }}">Se connecter</a>
+-->
+
+{% endblock %}
